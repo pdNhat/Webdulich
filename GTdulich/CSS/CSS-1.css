@@ -1,0 +1,109 @@
+*{box-sizing:border-box;}
+body>div{
+ margin-left:30px;
+ }
+.list{
+ list-style-type: none;
+ overflow:hidden;
+ padding:20px 23px;
+ width:100%;
+ background-color:green;
+ border:2px solid black;
+}
+li a{
+ color:white;
+ text-decoration:none;
+}
+ li{
+  float:left;
+ }
+ .right{
+ float:right;
+ } 
+li{
+ padding: 14px 16px;
+ text-align:center;
+ font-size:10px;
+ text-transform: uppercase;
+   }
+.image2{
+  margin-bottom:60px;
+  display:block;
+  max-width:100%;
+  height:auto;
+}
+ iframe{
+ max-width: 100%;
+ max-height: 500px;
+  }
+.cave{
+  max-width:100%;
+  height:auto;
+}
+.row::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+header,section{
+ margin-bottom:60px;
+ color:green;
+}
+main{
+ border-bottom:1px solid black;
+ }
+
+[class*="col-"]{
+  width:100%;
+  float:left; 
+  padding:15px;
+}
+
+@media only screen and (min-width:786px){
+  /* For tablet phone: */
+
+  .col-6 {
+    width: 50%;
+ }
+
+  section{
+    border-bottom:2px solid 	#808080;
+  }
+  li a:hover {
+ border: 1px solid white;
+ border-radius:10px;
+ padding:15px;
+ background-color:white;
+ color:green;
+ text-decoration:none;
+}
+
+}
+@media only screen and (min-width:992px){
+   /* For desktop: */
+  .col-s-4 {
+    width:33.33%;
+ }
+
+  .content{
+    background-color:#d9d9d9;
+   }
+  
+  section{
+    border-bottom:none;
+  }
+  .image{
+    background-image:url("../images/anhnen.jpg");
+    background-size:cover;
+    padding:100px;
+  }
+  .row{
+    padding:15px;
+  }
+  .image2{
+    margin-bottom:30px;
+   }
+ header{
+    margin-left:30px;
+  }
+  }
